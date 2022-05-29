@@ -24,6 +24,11 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
+header,
+section,
+footer {
+    font-family: 'Roboto', ' Raleway', sans-serif;
+}
 /* HEADER */
 .header {
     height: 80px;
@@ -124,8 +129,6 @@ header {
 }
 .advert .container .advert-item{
     display: flex;
-    align-items: center;
-    justify-items: center;
 }
 .advert .advert-item{
     display: inline-block;    
@@ -138,15 +141,14 @@ header {
 }
 .container .button1 {
     border-radius: 4px;
-    justify-items: center;
+    padding: 10px auto;
 }
-h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
+.container .button1 {
+    align-items: center;
 }
+
 .button1 {
+    font-family: Roboto;
     color: #FFFFFF;
     background-color: #2196F3;
     font-weight: 700;
@@ -160,12 +162,32 @@ h2 {
 .button1:focus {
     cursor: pointer;
 }
+/* MAIN SECTION */
 .text1 {
     color: #757575;
 }
-.text1>div {
+.text1>.text1-title {
     font-weight: 700;
     color: #212121;
+}
+.container .text1 {
+    display: inline-block;
+    max-width: 270px;
+}
+.container .list1 {
+    padding: 0;
+}
+.container .text1:not(:last-child) {
+    margin-right: px;
+}
+
+/* WHAT ARE WE DOING */
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 .team.container {
     height: 648px;
