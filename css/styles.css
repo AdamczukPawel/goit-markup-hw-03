@@ -22,7 +22,7 @@ img {
 }
 .container {
     width: 1200px;
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 0 15px;
 }
 header,
@@ -43,8 +43,11 @@ footer {
     margin-left: auto;
     margin-right: 12px;
 }
+.navigation-item:not(:last-child) {
+    margin-right: 46px;
+}
 .mail {
-    margin-right: 15px;
+    margin-right: 50px;
 }
 .tel {
     margin-right: auto;
@@ -119,6 +122,9 @@ header {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    width: 696px;
+    text-align: center;
+    margin: 0 auto;
 }
 .advert {
     background-color: #2F303A;
@@ -169,10 +175,12 @@ header {
 .text1>.text1-title {
     font-weight: 700;
     color: #212121;
+    margin-bottom: 10px;
 }
-.container .text1 {
-    display: inline-block;
-    max-width: 270px;
+.container .list1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 94px auto;
 }
 .container .list1 {
     padding: 0;
@@ -195,13 +203,9 @@ h2 {
     margin: 0;
 }
 
-.list2 .box1 img {
-    display: inline;
-}
-
-.box1 {
-    display: inline;
-    padding: 0;
+.container .list2 {
+    display: flex;
+    align-content: space-between;
 }
 .box1:not(:last-child) {
     padding-right: 30px;
@@ -209,10 +213,10 @@ h2 {
 .title2 {
     margin-bottom: 50px;
 }
+/* TEAM */
 .team .container {
-    height: 648px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    margin-top: 94px;
+    padding: 94px 0;
 }
 .team-title {
     margin-bottom: 50px;
@@ -233,6 +237,12 @@ h2 {
 }
 .text2:not(:last-child) {
     margin-right: 30px;
+}
+.john-figcaption {
+    margin: 30px auto;
+}
+.standing {
+    margin-top: 10px;
 }
 .team-member img {
     margin: 0;
@@ -257,8 +267,17 @@ h2 {
 .footer [href="/index.html"] {
     color: inherit;
 }
+.footer .container {
+    padding: 60px 0;
+}
 address {
     font-style: normal;
+}
+.footer-address:not(:last-child) {
+    margin-bottom: 9px;
+}
+footer .logo {
+    margin-bottom: 20px;
 }
 address .contact {
     color: rgba(255,255,255,0.6);
@@ -290,15 +309,4 @@ address .contact {
 }
 .team {
     background-color: #F5F4FA;
-}
-
-.johns {
-    display: flex;
-    list-style: none;
-}
-.footer {
-    display: block;
-}
-.navigation-item:not(:last-child) {
-    margin-right: 46px;
 }
