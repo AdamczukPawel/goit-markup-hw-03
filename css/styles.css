@@ -34,6 +34,9 @@ footer {
 .header {
     height: 80px;
 }
+.header .container {
+    border-bottom: 1px solid #ECECEC;;
+}
 .contact .link {
     display: inline;
 }
@@ -256,6 +259,9 @@ h2 {
     margin-inline-start: 0;
     margin-inline-end: 0;
 }
+.team {
+    background-color: #F5F4FA;
+}
 .accent {
     color: #212121;
     font-weight: 500;
@@ -282,6 +288,9 @@ footer .logo {
 address .contact {
     color: rgba(255,255,255,0.6);
 }
+
+    /* PORTFOLIO */
+
 .button2 {
     font-family: 'Roboto', 'Raleway', sans-serif;
     font-weight: 500;
@@ -289,6 +298,10 @@ address .contact {
     line-height: 1.63;
     text-align: center;
     background-color: #F5F4FA;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    height: 38px;
+    padding: 6px 22px;
 }
 .button2:hover,
 .button2:focus {
@@ -296,17 +309,57 @@ address .contact {
     color: #FFFFFF;
     cursor: pointer;
 }
+.portfolio-section {
+    margin: 94px auto;
+}
+.container .button-list {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.portfolio-buttons {
+    margin-bottom: 50px;
+}
+.button3:not(:last-child) {
+    margin-right: 8px;
+}
 .text3 {
     color: #757575;
     font-size: 16px;
     line-height: 1.88;
+    border: 1px solid #EEEEEE;
+    width: 370px;
+    height: 404px;
+}
+.text3 .text3-portfolio {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+.text3 figcaption {
+    margin: 20px auto;
+}
+.text3 h3,
+.text3 .portfolio-description {
+    margin: 0 auto;
 }
 .text3 h3 {
     font-weight: 700;
     color: #212121;
     font-size: 18px;
     line-height: 2;
+    width: 322px;
+    height: 36px;
 }
-.team {
-    background-color: #F5F4FA;
+.text3 .portfolio-description {
+    width: 322px;
+    height: 30px;
 }
+.container .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container .text3 {
+    margin-bottom: 30px;
