@@ -23,7 +23,6 @@ img {
 .container {
     width: 1200px;
     margin: 0px auto;
-    padding: 0 15px;
 }
 header,
 section,
@@ -34,7 +33,7 @@ footer {
 .header {
     height: 80px;
 }
-.header .container {
+.header {
     border-bottom: 1px solid #ECECEC;;
 }
 .contact .link {
@@ -44,7 +43,6 @@ footer {
 .container .container-item1 {
     display: flex;
     margin-left: auto;
-    margin-right: 12px;
 }
 .navigation-item:not(:last-child) {
     margin-right: 46px;
@@ -64,19 +62,22 @@ footer {
     display: flex;
     justify-content: center;
 }
-.logo a {
+.logo {
     font-family: 'Raleway';
     font-weight: 700;
     text-decoration: none;
     font-size: 26px;
     color: #212121;
     margin-right: 93px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 .link {
     color: #212121;
     text-decoration: none;
 }
-.logo>a>span {
+.logo>span {
     color: #2196F3;
 }
 header {
@@ -108,10 +109,8 @@ header {
     align-items: center;
 }
 
-.logo a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+.logo {
+    
 }
 
 .contact {
@@ -237,9 +236,11 @@ h2 {
     width: 270px;
     height: 368px;
     margin: 0;
+    background-color: #FFFFFF;
 }
-.text2:not(:last-child) {
-    margin-right: 30px;
+.johns{
+    display: flex;
+    justify-content: space-between;
 }
 .john-figcaption {
     margin: 30px auto;
